@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     text-align: center;
+    outline: none;
 }
 
 body {
@@ -43,4 +44,15 @@ input[type=number]::-webkit-outer-spin-button {
     -moz-appearance: none;
     appearance: none;
     margin: 0; 
+}
+
+.btn {
+    margin: 20px;
+    font-size: 1.2rem;
+    padding: 3px 20px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    transform: scale(1.04);
 }
