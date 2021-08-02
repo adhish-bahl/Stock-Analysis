@@ -28,8 +28,11 @@ body {
 
 .inputSec {
     margin: 10px 0px;
+    width: 43%;
+    text-align: left;
 }
 
-label {
-    width: 800px;
+label, input {
+    padding: 5px;
+    font-size: 1.3rem;
 }
