@@ -13,11 +13,19 @@ btn.addEventListener("click", ()=> {
     const outputPrice = newPrice * stockNumber;
     const finalPrice = outputPrice - invest;
     if(finalPrice > 0) {
-        const percentage = (finalPrice / invest) * 100;
+        let percentage = (finalPrice / invest) * 100;
+        percentage = percentage.toFixed(2);
+        let profit = finalPrice;
+        profit = profit.toFixed(2)
+        output.textContent = `You had gain ${percentage}% of your investment, that is profit of ₹${profit}.`;
     } else if(finalPrice == 0) {
         output.textContent = "You neither had a Profit nor a Loss";
-        output.style.display = "block";
     } else if(finalPrice < 0) {
-        const percentage = ((invest - outputPrice) / invest) * 100;
+        let percentage = ((invest - outputPrice) / invest) * 100;
+        percentage = percentage.toFixed(2);
+        let loss = invest - outputPrice;
+        loss = loss.toFixed(2);
+        output.textContent = `You had lost ${percentage}% of your investment, that is loss of ₹${loss}.`;
     }
+    output.style.display = "block";
 })
