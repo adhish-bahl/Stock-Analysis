@@ -26,18 +26,6 @@ body {
     background-color: rgb(167, 94, 42);
 }
 
-/* .container::before
-{
-    background-image: url("/images/background.jpg");
-    content: "";
-    position:relative;
-    width: 109%;
-    height: 5000%;
-    left: 0px;
-    right: 0px;
-    opacity: 80%;
-} */
-
 .heading {
     font-size: 3rem;
 }
@@ -48,10 +36,13 @@ body {
     text-align: left;
 }
 
+input {
+    background-color: rgb(167, 94, 42);
+}
+
 label, input {
     padding: 3px;
     font-size: 1.3rem;
-    background-color: rgb(167, 94, 42);
     border-left: none;
     border-right: none;
     border-bottom: 2px solid black;
