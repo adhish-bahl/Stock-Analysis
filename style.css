@@ -22,6 +22,7 @@ body {
     height: 80%;
     min-height: fit-content;
     border: 2px solid black;
+    box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
 }
 
 .heading {
@@ -52,6 +53,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 1.2rem;
     padding: 3px 20px;
     border-radius: 10px;
+    box-shadow: 3px 4px 13px 0px rgba(0,0,0,0.75);
 }
 
 .btn:hover {
