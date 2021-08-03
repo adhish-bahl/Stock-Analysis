@@ -17,7 +17,7 @@ btn.addEventListener("click", ()=> {
         percentage = percentage.toFixed(2);
         let profit = finalPrice;
         profit = profit.toFixed(2)
-        output.textContent = `You had gain ${percentage}% of your investment, that is profit of ₹${profit}.`;
+        output.textContent = `You had gain ${percentage}% of your investment, that is profit of ₹${profit}`;
     } else if(finalPrice == 0) {
         output.textContent = "You neither had a Profit nor a Loss";
     } else if(finalPrice < 0) {
@@ -25,7 +25,7 @@ btn.addEventListener("click", ()=> {
         percentage = percentage.toFixed(2);
         let loss = invest - outputPrice;
         loss = loss.toFixed(2);
-        output.textContent = `You had lost ${percentage}% of your investment, that is loss of ₹${loss}.`;
+        output.textContent = `You had lost ${percentage}% of your investment, that is loss of ₹${loss}`;
     }
     output.style.display = "block";
 })

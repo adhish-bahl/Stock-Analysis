@@ -17,9 +17,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 100px 100px;
+    padding: 50px 50px;
     width: 80%;
     height: 80%;
+    min-height: fit-content;
     border: 2px solid black;
 }
 
@@ -63,4 +64,27 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 15px;
     font-size: 1.6rem;
     border: black 2px solid;
+}
+
+.socials {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    display: grid;
+    /* justify-content: center; */
+    /* align-items: center; */
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.social:hover {
+    text-decoration: underline;
 }
